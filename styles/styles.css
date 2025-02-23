@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -15,6 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background: #fff;
+    /* backdrop-filter: blur(100px); */
     color: #000;
     padding: 10px 55px;
     z-index: 999;
@@ -221,8 +223,12 @@ h1 {
     font-size: 32px;
 }
 
+#projects h2{
+    color: #fff;
+}
+
 #experience h2,h2 a,
-#projects h2,h2 a,
+h2 a,
 #certifications h2,h2 a{
     color: #2757da;
     text-decoration: none;
@@ -230,7 +236,8 @@ h1 {
 
 #projects_div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center;align-items: center;
     flex-wrap: wrap;
 }
 
@@ -683,7 +690,7 @@ footer h4 a{
     }
 
     .proj_div{
-        height: 620px;
+        height: 550px;
     }
 
     #email-cont{
