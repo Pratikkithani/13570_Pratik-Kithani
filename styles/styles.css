@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 body {
@@ -15,8 +15,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
-    /* backdrop-filter: blur(100px); */
+    background: transparent;
+    backdrop-filter: blur(100px);
     color: #000;
     padding: 10px 55px;
     z-index: 999;
@@ -706,5 +706,9 @@ footer h4 a{
     .email-contact img{
         padding-left: 18px;
         padding-right: 18px;
+    }
+
+    #projects h2{
+        color: #fff;
     }
 }
